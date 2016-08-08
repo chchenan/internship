@@ -1,6 +1,6 @@
 # internship
 
-在数据库中添加这样一段sql：
+在数据库中添加这样一段sql： hfhfhffhfh
 DROP TABLE IF EXISTS `student_course`;
 CREATE TABLE `student_course` (
   `courseId` int(11) NOT NULL,
