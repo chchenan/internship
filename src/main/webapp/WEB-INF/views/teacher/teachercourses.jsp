@@ -33,7 +33,7 @@
 									<div class="panel-actions">								
 										<a class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
 									</div>
-                        //在这之间，以上未完
+                        //在这之间，以上未完。。
                         
                             <table id="mytable" class="table table-striped table-bordered">
                                 <thead>
