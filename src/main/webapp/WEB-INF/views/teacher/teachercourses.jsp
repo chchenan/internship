@@ -1,5 +1,5 @@
 
-//实训课程 Course. 第一个页面
+<!--实训课程 Course. 第一个页面-->
 
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
@@ -17,23 +17,21 @@
         <div class="col-sm-3 col-md-2 sidebar">
             <jsp:include page="../sidebar/sidebar-teacher.jsp" />
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        实训课程 Course
-                    </h3>
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-8 col-xs-8">
-                        
-                        //按钮元素，颜色和排版没找着
-                        <h6><i class="fa fa-table red"></i><span class="break"></span>Basic</h6>							
+        <div class="col-md-10 col-md-offset-2 col-sm-9 col-sm-offset-3 main">
+       
+         <div class="row">
+           <div class="col-md-8 col-sm-8">
+            <div class="panel">
+								<div class="panel-heading bk-bg-primary">
+									<h6><i class="fa fa-table red"></i><span class="break"></span> 实训课程 Course</h6>							
 									<div class="panel-actions">								
-										<a class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+										<!-- 颜色，排版还没有 -->
+										<a href="#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+										<!-- 旋转图标 需要加入 折叠插件（Collapse） -->
+										
 									</div>
-                        //在这之间，以上未完。。
+								</div>
+                        <!-- 在这之间，以上未完。。。。test -->
                         
                             <table id="mytable" class="table table-striped table-bordered">
                                 <thead>
@@ -64,27 +62,38 @@
 
                         </div>
                         
-                        <div class="col-md-4 col-sm-4 col-xs-4">
-                        	<div class="well well-lg">
-                        		<body>
-                        		<strong>EXAMPLE:请注意案例库的上传时间</strong><br>
-                        		<strong>作业的审核时间</strong><br>
-                        		<strong>XXXXXXXXXXX</strong><br>
-                        		</body>
-                        
-                        	</div>
                         </div>
                         
                         
                         
                         
+                        <div class="col-md-4 col-sm-4">
+               
+                        	<div class="well">
+                        		
+                        		<strong>EXAMPLE:请注意案例库的上传时间</strong><br>
+                        		<strong>作业的审核时间</strong><br>
+                        		<strong>XXXXXXXXXXX</strong><br>
+                        	
+                        
+                        	</div>
+                    
+                        </div>
+                        
+                        
                         
                     </div>
+                    
+                    
+                    
+                    
+                </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+            
+            
+        
+
 <jsp:include page="../footer/footer.jsp" />
 <script src="scripts/lib/dropzone.js"></script>
 </body>
