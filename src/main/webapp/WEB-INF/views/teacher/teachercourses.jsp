@@ -22,17 +22,18 @@
          <div class="row">
            <div class="col-md-8 col-sm-8">
             <div class="panel">
-								<div class="panel-heading bk-bg-primary">
-									<h6><i class="fa fa-table red"></i><span class="break"></span> 实训课程 Course</h6>							
-									<div class="panel-actions">								
-										<!-- 颜色，排版还没有 -->
-										<a href="#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
-										<!-- 旋转图标 需要加入 折叠插件（Collapse） -->
-										
+								<div class="panel-heading" style="background:#34495e !important; color:#ffffff; padding:15px;">
+							<!-- 模板的样式是通过引用修改后的bootstrap框架直接得到的（方便，但是不太好用在自己的东西上，改动很大），我这里只是用他框架的数值在代码中用style单个修改的（繁琐，不过都是每个页面都差不多） -->		
+									<h6 style="width:auto;display: inline-block;font-weight: 400;letter-spacing: 0;"><i class="fa fa-table red"></i><span class="break"></span> 实训课程 Course</h6>							
+							<!-- 1.通过调数值使折叠按钮居中，感觉不太好。 2.折叠按钮没有动画-->
+									<div class="panel-actions" style="display: inline-block; margin: 4px; padding: 5px; position: relative; text-align: center; float:right; ">		
+										<a data-toggle="collapse" data-parent="#accordion"  href="#collapseOne" class="btn-minimize"><i class="fa fa-chevron-up" style="color:#ffffff; "></i></a>
 									</div>
+							
 								</div>
                         <!-- 在这之间，以上未完。。。。test -->
-                        
+                        <div class="panel-body" style="padding:15px;">
+                          <div id="collapseOne" class="collapse in">
                             <table id="mytable" class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
@@ -59,9 +60,9 @@
                                 </s:iterator>
                                 </tbody>
                             </table>
-
+</div>
                         </div>
-                        
+                        </div>
                         </div>
                         
                         
