@@ -19,18 +19,19 @@
         <div class="col-sm-3 col-md-2 sidebar">
             <jsp:include page="../sidebar/sidebar-teacher.jsp" />
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-               <div class="wraper container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="panel panel-default">   
-                        <div class="panel-heading">
-                        		<h3 class="panel-title">作业 Homework</h3>
-                        	</div>                         
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <table id="mytable" class="table table-striped table-bordered">
+        <div class="col-md-10 col-md-offset-2 col-sm-9 col-sm-offset-3 main">
+              
+                <div class="row" style="padding:10px 50px 10px 10px;">
+                    <div class="col-md-12 col-sm-12">
+                       <div class="panel" style="padding:0px;"> <!-- 表格panel不设内边距 -->
+                        <div class="panel-heading" style="background:#34495e !important; color:#ffffff; padding:10px 25px;">
+                        		<h6 style="width:auto;display: inline-block;font-weight: 400;letter-spacing: 0;"><span class="glyphicon glyphicon-file"></span> 作业 Homework</h6>
+                        	</div>  
+                        	                       
+                            <div class="panel-body" style="padding:15px;">
+                               <div class="table-responsive" style="border:1px solid #ddd;">
+                                    
+                                        <table id="mytable" class="table"  style="color:#777; font-size:13px">
                                             <thead>
                                                 <tr>
                                                 	<th style="display:none;">课程</th>
@@ -66,15 +67,17 @@
                                                </s:iterator>
                                             </tbody>
                                         </table>
-
-                                    </div>
-                                </div>
+                                         
+                                   </div>
+                              
+                               
                             </div>
+                            
                         </div>
                     </div>
                     
                 </div>    
-             </div>
+             
         </div>
     </div>
 </div>
