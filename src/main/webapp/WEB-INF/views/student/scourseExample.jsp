@@ -13,16 +13,28 @@
         <div class="col-sm-3 col-md-2 sidebar">
             <jsp:include page="../sidebar/sidebar-student.jsp" />
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">案例库 Case Base</h3>
+        <div class="col-md-10 col-md-offset-2 col-sm-9 col-sm-offset-3 main">
+          <!--  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">   -->
+              
+                <div class="row"  style="padding:10px;">
+              <div class="col-md-8 col-sm-8">
+                 <div class="panel" style="padding:0px;"> 
+                 
+                    <div class="panel-heading"  style="background:#34495e !important; color:#ffffff; padding:10px 25px;">
+                        <h6 style="width:auto;display: inline-block;font-weight: 400;letter-spacing: 0;"><span class="glyphicon glyphicon-book"></span> 案例库 Case Base</h6>
+                       
+                       <div class="panel-actions" style="display: inline-block; margin: 5px 0px; padding:0px; position: relative; text-align: center; float:right; ">		
+									<a data-toggle="collapse" data-parent="#accordion"  href="#collapseOne" class="btn-minimize"><i class="fa fa-chevron-up" style="color:#ffffff;"></i></a>
+						       <!-- <a href="#" class="btn-setting"><i class="fa fa-rotate-right" style="color:#ffffff; width:48;"></i></a>
+									<a href="#" class="btn-close"><i class="fa fa-times" style="color:#ffffff;"></i></a> -->
+					   </div>
                     </div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12 rposition">
-                                <table class="table table-striped">
+                    
+                    <div id="collapseOne" class="collapse in">
+                    <div class="panel-body"  style="padding:15px;">
+                        <div class="table-responsive" style="border:1px solid #ddd;">
+                          <!-- 响应式表格，有外边框 -->
+                            <table class="table" style="color:#777; font-size:13px">
                                     <thead>
                                         <tr>
                                             <th class="rborder">案 例 名 称</th>
@@ -45,9 +57,28 @@
 
                             </div>
                         </div>
-                    </div>
                 </div>
+                </div>
+                
+        
         </div>
+        
+        <div class="col-md-4 col-sm-4">
+               
+                        	<div class="well">
+                        		
+                        		<strong>EXAMPLE:请注意及时查看并下载实验文件</strong><br>
+                        		<strong>***</strong><br>
+                        		<strong>blablablabla</strong><br>
+                        	    <strong>blabla</strong><br>
+                        
+                        	</div>
+                    
+                        </div>
+        
+        </div>
+        </div>
+        
     </div>
 </div>
 <jsp:include page="../footer/footer.jsp" />
